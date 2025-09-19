@@ -1,5 +1,5 @@
 import ApiFeatures, { catchAsync, HandleERROR } from "vanta-api";
-import Exercise from "../Models/exerciseMd";
+import Exercise from "../Models/exerciseMd.js";
 
 export const create = catchAsync(async (req, res, next) => {
   const exercise = await Exercise.create(req.body);

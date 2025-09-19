@@ -1,5 +1,5 @@
 import ApiFeatures, { catchAsync, HandleERROR } from "vanta-api";
-import Category from "../Models/CategoryMd";
+import Category from "../Models/CategoryMd.js";
 
 export const create = catchAsync(async (req, res, next) => {
   const category = await Category.create(req.body);
